@@ -10,7 +10,7 @@
         <div class="notfoundinner">
           <span>4</span>
           <span class="notimage">
-            <img src="/wp-content/themes/nava/img/404.png">
+            <img src="<?php echo THEME_URL;?>/img/404.png">
           </span>
           <span>4</span>
         </div>

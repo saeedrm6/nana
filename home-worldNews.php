@@ -48,8 +48,12 @@
 
 </div>
 <aside class="side col-md-4" >
-    <?php if ( is_active_sidebar( 'home-down-widget-area' ) ) : ?>
-        <?php dynamic_sidebar( 'home-down-widget-area' ); ?>
+    <?php
+//    include "ads-themplate/centeral-home-ads.php";
+    if ( is_active_sidebar( 'home-down-widget-area' ) ) : ?>
+        <?php
+        dynamic_sidebar( 'home-down-widget-area' );
+        ?>
     <?php endif; ?>
 </aside>
 </div>

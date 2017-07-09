@@ -200,11 +200,14 @@ if (isset($music_meta['musicFile']) && !empty($music_meta['musicFile'])) {
 </div>
 <section class="k-central k-central-music">
     <div class="container">
-      <div class="banner ">
-          <a target="_blank" href="http://fastclick.co/a.aspx?Task=Click&ZoneID=1928&CampaignID=2441&AdvertiserID=212&BannerID=916&SiteID=58​">
-            <img src="/wp-content/themes/nava/img/banner/alibaba-music.gif">
-          </a>
-      </div>
+<!--      <div class="banner ">-->
+<!--          <a target="_blank" href="http://fastclick.co/a.aspx?Task=Click&ZoneID=1928&CampaignID=2441&AdvertiserID=212&BannerID=916&SiteID=58​">-->
+<!--            <img src="/wp-content/themes/nava/img/banner/alibaba-music.gif">-->
+<!--          </a>-->
+<!--      </div>-->
+        <?php
+            include_once "ads-themplate/centeral-home-ads.php";
+        ?>
     </div>
     <div class="container music-container">
       <div class="row">
@@ -285,6 +288,9 @@ if (isset($music_meta['musicFile']) && !empty($music_meta['musicFile'])) {
                 the_content(); ?>
             </div>
         </div>
+        <?php
+            include_once "ads-themplate/sidebar-ads.php";
+        ?>
     </aside>
 
         <div class="col-md-8">

@@ -144,19 +144,19 @@ endif;
                 endwhile;
             wp_reset_query();
             endif;
+            include_once "ads-themplate/single-728.php";
             ?>
-            <!-- <div class="banner col-md-12 nopadding">
-            <a target="_blank" href="http://fastclick.co/a.aspx?Task=Click&ZoneID=2552&CampaignID=3372&AdvertiserID=436&BannerID=1378&SiteID=58">
-              <img src="/wp-content/themes/nava/img/banner/728-90-abarasa.gif" alt="تبلیغ">
-            </a>
-             </div> -->
+
             <article class="m-innernews-related m-innernews-item nopadding col-md-12 col-sm-12 col-xs-12 col-lg-12">
                 <div class="m-owl-newsinner">
                     <div class="row nopadding k-title-row">
+
                         <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
                             <h2 class="m-title-related"><i class="fa fa-link" aria-hidden="true"></i> مطالب مرتبط</h2>
                         </div>
+
                     </div>
+
                     <div id="m-owl-newsinner" class="owl-carousel">
                         <?php
 
@@ -208,6 +208,10 @@ endif;
                     </div>
                 </div>
             </article>
+            <?php
+                include_once "ads-themplate/single-728-after.php";
+            ?>
+
             <article class="col-md-12 col-sm-12 col-xs-12 col-lg-12 nopadding">
                 <div class="m-owl-newsinner2">
                     <div class="col-md-10 col-lg-10 col-sm-10 col-xs-12 nopadding">
@@ -255,6 +259,7 @@ endif;
                             </div>
                         </div>
                     </div>
+
                     <div class="nava-logo-wrapper col-md-2 col-lg-2 col-sm-2 col-xs-12 nopadding">
                         <div class="m-music-lastbox nopadding text-center">
                             <a href="<?php echo home_url('music') ?>"><img src="<?php echo THEME_IMAGES ?>logo.png"></a>
@@ -262,6 +267,7 @@ endif;
                         </div>
                     </div>
                 </div>
+
             </article>
             <section class="k-comment clearfix">
                 <header class="k-comment-header">
@@ -276,6 +282,7 @@ endif;
                     ?>
                 </div>
             </section>
+
         </section>
         <!--MinaN Inner news content-->
 
@@ -284,7 +291,9 @@ endif;
 
 
             <?php if (is_active_sidebar('single-simple-widget-area')) : ?>
-                <?php dynamic_sidebar('single-simple-widget-area'); ?>
+                <?php
+                include_once "ads-themplate/sidebar-ads.php";
+                dynamic_sidebar('single-simple-widget-area'); ?>
             <?php endif; ?>
 
         </aside>

@@ -63,6 +63,10 @@ if (have_posts()):
     </div>
     </div>
 </div>
+        <?php
+            echo "<br><br>";
+            include_once "ads-themplate/centeral-home-ads.php";
+        ?>
 <section class="k-central k-central-video col-md-12 col-xs-12 col-sm-12 col-lg-12 nopadding">
     <div class="container video-container">
 
@@ -147,7 +151,9 @@ if (have_posts()):
         </div>
 
         <aside class="side col-md-4 col-lg-4">
-            <?php if (is_active_sidebar('tv-widget-area')) {
+            <?php
+            include_once "ads-themplate/sidebar-ads.php";
+            if (is_active_sidebar('tv-widget-area')) {
                 dynamic_sidebar('tv-widget-area');
             }
             ?>

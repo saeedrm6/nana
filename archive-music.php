@@ -43,6 +43,7 @@
                         endif;
                         ?>
                         </div>
+
                     </div>
                 </div>
                 <div class="m-margin-container container">
@@ -159,6 +160,9 @@
                                 $last_query = new WP_Query( $last_args );
                                 if (have_posts()):
 						?>
+                                    <?php
+                                        include_once "ads-themplate/archive-music-728.php";
+                                    ?>
                         <div class="k-music-containers">
 							<?php echo nava_title_row('دانلود آهنگ جدید', home_url('#'), '', '', '', 'h1'); ?>
                             <div class="new">
@@ -272,8 +276,12 @@
                                 ?>
                     </div>
                     <aside class="side col-md-4 " id="myScrollspy" >
-                        <?php if (is_active_sidebar('music-widget-area')) : ?>
-                            <?php dynamic_sidebar('music-widget-area'); ?>
+                        <?php
+                        include_once "ads-themplate/sidebar-ads.php";
+                        if (is_active_sidebar('music-widget-area')) : ?>
+                            <?php
+                            dynamic_sidebar('music-widget-area');
+                            ?>
                         <?php endif; ?>
                     </aside>
                   </div>

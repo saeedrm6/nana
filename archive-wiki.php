@@ -37,7 +37,6 @@ get_header();
             </div>
         </aside>
         <section class="alphabet-search-box clearfix col-lg-9 col-md-9 col-sm-9 col-xs-12 nopadding">
-		
             <div class="m-alphabet">
                 <a class="search-a-z" href="#">
                     <span>جستجو بر اساس حروف الفبا</span>

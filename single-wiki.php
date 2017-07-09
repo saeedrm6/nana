@@ -82,6 +82,7 @@ if (have_posts()):
 <?php
     endwhile;
 endif;
+include_once "ads-themplate/centeral-home-ads.php";
 ?>
 <div class="container m-whole-container">
     <div class="row">
@@ -342,6 +343,9 @@ endif;
                     </div>
                 </div>
             </div>
+            <?php
+                include_once "ads-themplate/sidebar-ads.php";
+            ?>
         </aside>
     </div>
 </div>

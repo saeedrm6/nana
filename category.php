@@ -105,7 +105,10 @@
     <div class="container">
       <div class="row">
         <div class="k-news col-md-8 col-sm-12 col-xs-12 col-lg-8">
-          <div class="row">
+            <?php
+                #include_once "ads-themplate/article-up-home.php";
+            ?>
+            <div class="row">
             <?php
 			wp_reset_query();
             if (have_posts()):
@@ -154,7 +157,9 @@
         </div>
 
         <aside class="side col-md-4 col-sm-12 col-xs-12 col-lg-4" id="myScrollspy" >
-            <?php if ( is_active_sidebar( 'category-simple-widget-area' ) ) : ?>
+            <?php
+            include_once "ads-themplate/sidebar-ads.php";
+            if ( is_active_sidebar( 'category-simple-widget-area' ) ) : ?>
                 <?php dynamic_sidebar( 'category-simple-widget-area' ); ?>
             <?php endif; ?>
         </aside>

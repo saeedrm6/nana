@@ -26,8 +26,10 @@ if (have_posts()):
             </div>
         </div>
     </div>
-    <?php
 
+    <?php
+        echo "<br><br><br><br>";
+        include_once "ads-themplate/centeral-home-ads.php";
     ?>
     <div class="demo-gallery">
         <?php echo do_shortcode('[navaGallery]'); ?>

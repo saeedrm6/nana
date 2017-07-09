@@ -4,6 +4,7 @@ get_header() ?>
 <?php
 get_template_part('home', 'slider');
 get_template_part('home', 'music');
+include_once "ads-themplate/centeral-home-ads.php";
 get_template_part('home', 'tv');
 ?>
 <section class="k-central">

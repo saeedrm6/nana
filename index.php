@@ -65,5 +65,6 @@ wp_reset_query();
     </div>
 </section>
 <!--central-->
+<h1>SALAM</h1>
 
 <?php get_footer(); ?>

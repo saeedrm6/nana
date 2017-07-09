@@ -1,0 +1,30 @@
+.banner{
+    margin-bottom: 20px !important;
+}
+.notfound-content .notfound .notfoundinner {
+    width: 55% !important;
+    margin: 0 auto !important;
+    display: table !important;
+}
+.newbanner{
+    margin:0px auto 20px ;
+}
+
+.banner-940{
+    width: 940px;
+}
+.banner728{
+    padding-bottom:15px;
+}
+.banner728 img{
+    width: 100% !important;
+}
+.banner300{
+    padding-bottom: 15px;
+}
+.banner300 img{
+    width: 100% !important;
+}
+.no-padding{
+    padding:0;
+}

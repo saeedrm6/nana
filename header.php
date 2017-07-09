@@ -61,17 +61,16 @@ if ($posttags) {
 ?>"/>
 	<?php endif; ?>
     <?php wp_head(); ?>
+
 </head>
 <body <?php body_class('k-body'); ?>>
 <!--header-->
 <header class="k-header clearfix">
     <div class="k-up">
       <div class="container">
-        <div class="banner banner-468">
-<!--             <a target="_blank" href="http://fastclick.co/a.aspx?Task=Click&ZoneID=2552&CampaignID=3372&AdvertiserID=436&BannerID=1378&SiteID=58">
-              <img src="/wp-content/themes/nava/img/banner/airasa468-60.gif">
-            </a> -->
-        </div>
+          <?php
+            include_once "ads-themplate/header-ads.php";
+          ?>
       </div>
     </div>
     <div class="k-down">

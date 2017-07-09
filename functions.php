@@ -78,6 +78,7 @@ if (!function_exists('nava_enqueue_styles')) {
         //wp_enqueue_style('nava-mediaelementjsplayer', THEME_CSS . 'mediaelementplayer.css', array(), '1.0');
         //wp_enqueue_style('nava-mediaelementjsplayer-playlist', THEME_CSS . 'mediaelement-playlist-plugin.min.css', array(), '1.0');
         wp_enqueue_style('nava-style', THEME_CSS . 'style.css', array(), '1.08');
+        wp_enqueue_style('custom-css', THEME_CSS . 'saeedcustom.css');
     }
 }
 add_action('wp_enqueue_scripts', 'nava_enqueue_styles');
@@ -1526,4 +1527,6 @@ function strleft($s1, $s2) { return substr($s1, 0, strpos($s1, $s2)); }
 
 //$h = new MMTHelper();
 remove_action('wp_head', 'wp_generator');
+require_once dirname( __FILE__ ) . '/cmb2/init.php';
+require_once dirname( __FILE__ ) . '/functions/cmb2-options.php';
 

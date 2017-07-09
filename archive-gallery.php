@@ -7,11 +7,11 @@ get_header();
     }
 </style>
 <div class="fullpage-gallery-carousel">
-    <div class="owl-carousel ">
-        <div class="item">
-            <img src="<?php echo THEME_IMAGES ?>video/1.jpg">
-        </div>
-    </div>
+<!--    <div class="owl-carousel ">-->
+<!--        <div class="item">-->
+<!--            <img src="--><?php //echo THEME_IMAGES ?><!--video/1.jpg">-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="gallery-search">
         <form class="" method="POST" action="<?php echo home_url('finds'); ?>" >
             <h3>جستجوی آلبوم عکس</h3>
@@ -22,6 +22,10 @@ get_header();
         </form>
     </div>
 </div>
+<br><br><br>
+<?php
+include_once "ads-themplate/centeral-home-ads.php";
+?>
 <section class="k-central k-central-gallery">
 <div class="container">
     <div class="gallery-container">
@@ -67,6 +71,7 @@ get_header();
         </div>
     </div>
 </div>
+
 </section>
 <?php
 get_footer();

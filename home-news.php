@@ -27,11 +27,13 @@
             $post_query = new WP_Query( $post_args );
             if ($post_query->have_posts()):
                 $i = true;
-                while($post_query->have_posts()):
+            include_once "ads-themplate/article-up-home.php";
+            while($post_query->have_posts()):
                     $post_query->the_post();
                     $post_id = get_the_ID();
                     $supTitle = esc_attr(get_post_meta($post_id, 'postSupTitle', true));
                     ?>
+
                     <article class="k-news-item <?php
                     if($i == true) {
                         echo 'first-item col-md-12';
@@ -68,8 +70,10 @@
         </div>
     </div>
 	<aside class="side col-md-4" >
+        <?php  include_once "ads-themplate/home-sidebar-ads.php";?>
     <?php if ( is_active_sidebar( 'home-widget-area' ) ) : ?>
-        <?php dynamic_sidebar( 'home-widget-area' ); ?>
+
+        <?php dynamic_sidebar( 'ز' ); ?>
     <?php endif; ?>
 </aside>
 
